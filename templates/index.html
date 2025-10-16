@@ -5,7 +5,31 @@
     <title>Meu App Flask</title>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Este é o meu primeiro site no Render!</p>
+      <main>
+            <form method="POST" action="/login">
+                <label for="username"> Username: </label>
+                <input type="text" id="username" name="username" required>
+                <br>
+                <label for="password"> Password: </label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <button type="submit"> Login </button>
+        </main>
+        
+    <script>
+        //login
+        const user = admin 
+        const pwd = admin123
+
+        const userDigitado = document.getElementById('usuario').value()
+        const pwdDigitado = document.getElementById('senha').value()
+
+        if(user === userDigitado && pwd === pwdDigitado){ 
+            alert('Login realizado com sucesso!')
+        } else {
+            alert ('Usuario ou senha incorretos!')
+        }
+    </script>
+    
 </body>
 </html>
